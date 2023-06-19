@@ -1,16 +1,47 @@
-import React from 'react'
-import { Nav, NavbarContainer, NavLogo } from './NavbarElement'
-
+import React from "react";
+import {
+  Nav,
+  NavbarContainer,
+  NavLogo,
+  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks,
+  NavBtn,
+  NavBtnLink
+} from "./NavbarElement";
+import {FaBars} from 'react-icons/fa';
+ 
 const Navbar = () => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-            <NavLogo to='/'>dollar</NavLogo>
+          <NavLogo to="/">dollar</NavLogo>
+          <MobileIcon>
+            <FaBars />
+          </MobileIcon>
+          <NavMenu>
+            <NavItem>
+              <NavLinks to="about">About</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="discover">Discover</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="services">Services</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="signup">Sign Up</NavLinks>
+            </NavItem>
+          </NavMenu>
+          <NavBtn>
+            <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
