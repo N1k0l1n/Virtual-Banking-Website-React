@@ -6,7 +6,7 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #101606;
+  background: black;
 
   @media screen and (max-width: 768px) {
     height: 1100px;
@@ -44,7 +44,7 @@ export const ServicesCard = styled.div`
   border-radius: 10px;
   min-height: 340px;
   padding: 30px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease-in-out;
 
   &:hover {
