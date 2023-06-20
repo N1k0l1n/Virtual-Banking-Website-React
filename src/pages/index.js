@@ -28,8 +28,8 @@ const Home = () => {
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjFour} />
-      <Services/>
-      <Footer/>
+      <Services />
+      <Footer />
     </>
   );
 };
