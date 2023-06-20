@@ -29,7 +29,7 @@ const InfoSection = ({
   alt,
   primary,
   dark,
-  dark2
+  dark2,
 }) => {
   return (
     <>
